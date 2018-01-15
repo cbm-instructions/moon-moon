@@ -33,12 +33,15 @@ Zu diesem Thema haben wir mehrere Interviews geführt, aus denen hervorging das 
 
 ## Anleitung
 
-[Anleitung](https://github.com/cbm-instructions/moon-moon/tree/master/instruction/README.md)
+Die Anleitung so wie liste aller benötigten Materialien befindet sich [Anleitung](https://github.com/cbm-instructions/moon-moon/tree/master/instruction/README.md).
 
 
 ## Code
 
+Der Code für das Projekt wurde in C++ geschrieben und befindet sich [hier](https://github.com/cbm-instructions/moon-moon/tree/master/code/).
+
 ### Zustandsautomat
+
 <p align="center">
 <img src="/images/zustandsautomat.jpg" alt="zustandsautomat.jpg"/>
 </p>
