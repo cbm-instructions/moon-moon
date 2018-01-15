@@ -59,3 +59,5 @@ Der Code für das Projekt wurde in C++ geschrieben und befindet sich [hier](http
 #### Optische Verbesserungen
 
 1. Absenken der obersten Platte, damit sie mit dem LED-Ring auf einer Höhe ist.
+
+2. Die allgemeine Größe verringern.
