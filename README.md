@@ -1,4 +1,4 @@
-# How to make ???
+# How to make Halexa
 
 <p align="center">
 <img src="/images/halexa.gif" alt="halexa.gif"/>
@@ -6,8 +6,23 @@
 
 
 ## Einleitung
+Halexa hilft Ihnen dabei einen gesünderen Schlafrythmus zu bekommen indem
 
-## POV
+
+## Challenge
+
+In einer Gesellschaft mit steigender Lebenserwartung, mangelnder Bewegung, sowie
+steigendem Übergewicht sind Lösungen gefragt die langfristig helfen die
+Gesundheitskosten zu reduzieren, indem sie Menschen zu einem gesünderen Leben
+anhalten. Auch Technologie kann hier einen wertvollen Beitrag leisten, indem sie
+Menschen dabei unterstützt sich mehr zu bewegen, mehr mit anderen Menschen
+gemeinsam zu unternehmen, gesünder zu essen, ein anderes Schlafverhalten zu
+entwickeln etc.
+
+
+Zu diesem Thema haben wir mehrere Interviews geführt, aus denen hervorging das viele Studenten viel zu wenig Schlafen. Ein Grund hierfür war in den meisten Fällen, dass die .... Aufgrund dieser Erkentnisse haben wir folgen POV formuliert:
+
+### POV
 
 ```
   Wie können wir verhindern, dass Studenten vor dem Einschlafen zu lange ihre Zeit,
@@ -16,23 +31,14 @@
 ```
 
 
-## Materialien und Werkzeuge
+## Anleitung
 
-### Materialien
-* Arduino Uno
-* 3x Force Resistance Sensor
-* 1x Vibrationsmotor
-* 1 Neopixel LED Ring (4/4)
-* 1x Holzstab
-* Holz
-
-### Werkzeuge
-* Dremel
-* Laser Cutter
+[Anleitung](https://github.com/cbm-instructions/moon-moon/tree/master/instruction/README.md)
 
 
+## Code
 
-## Zustandsautomat
+### Zustandsautomat
 <p align="center">
 <img src="/images/zustandsautomat.jpg" alt="zustandsautomat.jpg"/>
 </p>
