@@ -1,7 +1,7 @@
 # How to make ???
 
 <p align="center">
-<img src="/images/halexa.gif" alt="iExpo.gif"/>
+<img src="/images/halexa.gif" alt="halexa.gif"/>
 </p>
 
 
@@ -26,7 +26,13 @@
 * 1x Holzstab
 * Holz
 
-
 ### Werkzeuge
 * Dremel
 * Laser Cutter
+
+
+
+## Zustandsautomat
+<p align="center">
+<img src="/images/zustandsautomat.jpg" alt="zustandsautomat.jpg"/>
+</p>
