@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="http://www.librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.61590909mm" height="142mm" viewBox="0 0 145.61590909 142">
+    <g lc:layername="0" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="Inner Circle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <circle cx="74.61590909" cy="71" r="71"/>
+    </g>
+    <g lc:layername="Inner Wire Tunnel" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <line x1="53.61590909" y1="23.36860279" x2="53.61590909" y2="23.36860279"/>
+        <line x1="107.54319239" y1="26.94555624" x2="117.54319239" y2="9.62504817"/>
+        <line x1="96.30453488" y1="20.45691431" x2="106.30453488" y2="3.13640623"/>
+        <line x1="20" y1="64.51135806" x2="0" y2="64.51135806"/>
+        <line x1="20" y1="77.48864194" x2="0" y2="77.48864194"/>
+        <line x1="96.30453488" y1="121.54308569" x2="106.30453488" y2="138.86359377"/>
+        <line x1="107.54319239" y1="115.05444376" x2="117.54319239" y2="132.37495183"/>
+    </g>
+    <g lc:layername="Only Wire Holes" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <circle cx="102.11590909" cy="23.36860279" r="6.5"/>
+        <circle cx="102.11590909" cy="118.63139721" r="6.5"/>
+        <circle cx="19.61590909" cy="71" r="6.5"/>
+    </g>
+</svg>
