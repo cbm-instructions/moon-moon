@@ -45,3 +45,17 @@ Der Code für das Projekt wurde in C++ geschrieben und befindet sich [hier](http
 <p align="center">
 <img src="/images/zustandsautomat.jpg" alt="zustandsautomat.jpg"/>
 </p>
+
+
+## Ideen zur Weiterentwicklung
+
+1. Einsätzen eines Vibrationsmotors unter der obersten Platte für Vibrationsfeedback bei der Benutzung der Platte als Eingabegerät.
+
+2. Erweiterung um Einstellungsmenü um Schlafenszeit, Weckzeit und länge des Schlafes einzustellen.
+
+3. Hinzufügen von Kapazitiven Buttons um die oben erwähnten Einstellungen vorzunehmen (Drucksensoren zu ungenau).
+
+
+#### Optische Verbesserungen
+
+1. Absenken der obersten Platte, damit sie mit dem LED-Ring auf einer Höhe ist.
