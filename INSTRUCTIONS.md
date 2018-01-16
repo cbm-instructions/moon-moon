@@ -38,9 +38,10 @@ In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. De
 ### Benötigte Vorkenntnisse
 
 * Grundlegende handwerkliche Kenntnisse
-* Arduino Kentnisse
+* Arduino Kenntnisse
 * Löten
-* C++ (alles)
+* C++: Pointer, Klassen, Speicheralloziierung und Grundlagen sollten bekannt sein
+* Das Konzept eines Zustandsautomaten sollte bekannt sein
 
 ### Zusammenlöten des LED-Rings
 
@@ -262,3 +263,18 @@ Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken 
 **Tipp:** Für eine saubere und permanente Ummantelung muss der Mantel ca 1cm länger gedruckt werden. Zusätzlich müssen Kabelöffnungen gebohrt werden und ein permanenter Befestigungsmechanismus gefunden werden.
 
 Halexa kann nun in Betrieb genommen werden.
+
+## Anpassung der Software
+
+Aktuell gibt es noch keine Einstellungsmöglichkeiten. Die Software muss direkt bearbeitet werden und auf den Arduino gespielt werden.
+
+Parameter zur Druckplatte befinden sich in der [ForceSensors.cpp](code/ForceSensors.cpp). Hier können Schwellwerte für Handys und Berührungen gesetzt werden. Auch können die Sensoren gewichtet werden, damit sie gleichstarke Werte liefern.
+
+Parameter zur Zeit befinden sich in der [Clock.cpp](code/Clock.cpp). Hier kann die Schlafenszeit definiert werden. Durch Anpassen der Logik in isSleepTime() kann (nach der Anbindung einer besseren Uhr) eine korrekte Schlafenszeit nach Stunde (hoursOfDay) und Minuten (minutesOfHour) erkannt werden.
+Es kann auch eine optimale Schlafdauer festgelegt werden.
+
+Die [arduino.ino](code/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
+
+Die [NeoPatterns.cpp](code/NeoPatterns.cpp) erlaubt zusammen mit allen State-Klassen die Anpassung der Animationen und Farben.
+
+Die [Memory.cpp](code/Memory.cpp) kann genutzt werden um einen echten persistenten Speicher anzubinden.

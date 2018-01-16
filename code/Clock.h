@@ -32,6 +32,7 @@ class Clock {
         long getHourOfDay();
         bool isSleepTime();
 
+    long getOptimalSleepLength();
 };
 
 #endif

@@ -23,6 +23,10 @@ bool Clock::isSleepTime() {
 
 }
 
+long Clock::getOptimalSleepLength() {
+    return 10000;
+}
+
 void Clock::setHoursInDay(long time) {
   this->hoursInDay = time;
 }

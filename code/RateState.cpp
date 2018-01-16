@@ -16,9 +16,9 @@
 void RateState::setup() {
     this->ring->Rate();
     long x = millis();
-    this->memory->setSleptEnough((millis() - this->memory->sleepStartedAt) > 10000);
+    this->memory->setSleptEnough((millis() - this->memory->sleepStartedAt) > this->clock->getOptimalSleepLength());
     Serial.print("Set SleptEnaugh: ");
-    Serial.println((x - this->memory->sleepStartedAt) > 10000);
+    Serial.println((x - this->memory->sleepStartedAt) > this->clock->getOptimalSleepLength());
 };
 
 void RateState::loop() {

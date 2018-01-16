@@ -101,6 +101,10 @@ Ziel der halexa ist es dem Nutzer zu zeigen, dass das Einhalten der drei Schlafk
 
 5. Technische Anbindung an Home-Automation z.B. IFTTT oder NFC-Trigger
 
+6. Erweiterung um einen echten persistenten Speicher. Aktuell ist die Statistik nur vorhanden, wenn das Gerät an ist. Sie liegt im flüchtigen Speicher.
+
+7. Erweiterung um ein präzises Zeitmodul.
+
 #### Optische Verbesserungen
 
 1. Absenken der obersten Platte, damit sie mit dem LED-Ring auf einer Höhe ist.
