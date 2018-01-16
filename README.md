@@ -30,9 +30,9 @@ Zu diesem Thema haben wir mehrere Interviews geführt, aus denen hervorging das 
 
 
 
-## Anleitung
+## Bauanleitung
 
-Die Anleitung so wie liste aller benötigten Materialien befindet sich [Anleitung](https://github.com/cbm-instructions/moon-moon/tree/master/instruction/README.md).
+Die Anleitung so wie liste aller benötigten Materialien befindet sich [Bauanleitung](https://github.com/cbm-instructions/moon-moon/tree/master/instruction/README.md).
 
 
 ## Code
@@ -60,3 +60,9 @@ Der Code für das Projekt wurde in C++ geschrieben und befindet sich [hier](http
 1. Absenken der obersten Platte, damit sie mit dem LED-Ring auf einer Höhe ist.
 
 2. Die allgemeine Größe verringern.
+
+
+
+## Das Team
+
+Adrian Endrich und Christopher Hansen

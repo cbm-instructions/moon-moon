@@ -6,15 +6,17 @@
 * 1 Neopixel LED Ring (4/4)
 * Sperrholzplatte 4x460x61 mm
 * Kabel
-* Streifenrasterplatine
+* 1 x Streifenrasterplatine
 * 5 Pin Stiftleiste
-* 2x 6 Pin Stiftleiste
+* 3x 6 Pin Stiftleiste
+* 2x 8 Pin Stiftleiste
 * 5 x 10 kΩ Widerstände
 * Holzleim
 * Klebeband
 * Rundstab 12 x 12 mm 0,5m (Buche)
 * Schmirgelpapier
 * Doppelseitiges Klebeband
+* Plexiglassscheibe 170x170 mm
 
 ### Werkzeuge
 * Laser Cutter
@@ -22,6 +24,7 @@
 * Lötkolben
 * Zange
 * Heißklebepistole
+* Teppichmesser
 
 ## Vorbereitung
 
@@ -38,7 +41,7 @@
 
 Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](https://github.com/cbm-instructions/moon-moon/tree/master/lasercutter/) heruntergeladen werden.
 
-Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplatte 4x460x61 mm benutzt:
+Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplatte (4x460x61 mm) benutzt:
 
 * Grundplatte.svg
 * Stelzenhalter.svg
@@ -54,6 +57,14 @@ Die geschnittenen Platten sollten ungefähr so aussehen:
 <p align="center">
 <img src="/images/holzplatten.jpg" alt="holzplatten.jpg"/>
 </p>
+
+Als letztes wird noch einmal die LedRingHalterung benötigt aber diesmal mit der Plexiglassscheibe (170x170 mm). Diese liegt später auf dem LED-Ring.
+
+<p align="center">
+<img src="/images/plexiglassscheibe.jpg" alt="plexiglassscheibe.jpg"/>
+</p>
+
+
 
 ## Schritt für Schritt Anleitung
 
@@ -102,7 +113,7 @@ Schnittreste vom Laser Cutter:
 
 
 Als erstes sollten Sie die Stelzenhalterplatte mittig auf die Bodenplatte legen und die Stellen markieren an denen die Löcher sind. Auf diese Stellen werden nun die Drucksensoren geklebt (diese haben bereits eine Klebefläche). Danach kann die Stelzenhalterplatte wie vorher auf die Bodenplatte gelegt werden. Wir haben die runden Schnittreste des Laser Cutters als Zwischenstücke benutzt um die Bodenplatte mit der Stelzenhalterplatte zu befästigen, so dass diese nicht die Sensoren berührt. Schneiden Sie drei gleichlange Stücke vom Rundstab (je 70 mm) ab . Kleben Sie diese wie auf dem unteren Bild leicht versetzt zu den Drucksensoren auf die Stelzenhalterplatte (Mit Holzleim oder Heißklebepistole).
-Am Schluss kann man noch die Kabel mit Klebeband fixieren.
+Am Schluss können Sie noch die Kabel mit Klebeband fixieren und die Kabel mit der bereits erstellten Steckplatine verbinden.
 
 
 <p align="center">
@@ -147,4 +158,40 @@ Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim 
 
 <p align="center">
 <img src="/images/druckplatte.jpg" alt="druckplatte.jpg"/>
+</p>
+
+#### 5. Arduino Steckplatte
+
+In diesem Schritt wird eine Steckplatte erstellt die mit den Drucksensoren und dem Led-Ring verbunden ist. Diese Steckplatte kann dann später einfach auf den Arduino gesteckt werden und vereinfacht die Verkabelung.
+
+**Benötigte Materialien für diesen Schritt:**
+  * Streifenrasterplatine
+  * Kabel
+  * 1x 6 Pin Stiftleiste
+  * 2x 8 Pin Stiftleiste
+  * Arduino
+  * Teppichmesser
+
+Als erstes schneiden Sie eine Stück aus der Streifenrasterplatine aus welches der größe des Arduinos entspricht. Nehmen Sie den Arduino und Stecken Sie die 8 Pin Stiftleiste in Power die 6 Pin Stiftleiste in den Analog In und die letzte 8 Pin Stiftleiste in die Digital Eingänge 0-7. Nun können sie einfach die Streifenrasterplatine auf die Stifleisten legen und diese festlöten. Achten Sie darauf das die Streifen von der einen Seite zu anderen des Arduinos verlaufen. Nachdem die Stiftleisten an der Streifenrasterplatine festgelötet sind können sie die Platine abnehmen. Mit einem Teppichmesser können Sie nun wie im Bild in der mitte der Platine das Kupfer abkratzen.
+
+<p align="center">
+<img src="/images/arduinoSteckplatte.png" alt="arduinoSteckplatte.png"/>
+</p>
+
+Nun zur verkabelung. Löten Sie jeweils das Power Kabel des LED-Rings und der Sensorstckplatte an den 5 V Streifen der Steckplatte. Genauso werden jeweils der Ground des LED-Rings und der Sensorsteckplatte an den Ground Streife der Steckplatte gelötet.
+Zuletzt Löten sie die drei Inputkabel der Sensoren an die Analog Eingänge A0 - A2
+
+#### 6. Zusammensetzen
+
+In diesem Schritt werden alle vorher erstellen Komponenten zusammengesetzt.
+
+**Benötigte Materialien für diesen Schritt:**
+  * Erstellte Bodenplatte
+  * Erstellte Druckplatte
+  * Holzmantel
+  * Arduino und Steckplatte
+  * Plexiglassscheibe
+
+<p align="center">
+<img src="/images/zusammengesetzt.jpg" alt="zusammengesetzt.jpg"/>
 </p>
