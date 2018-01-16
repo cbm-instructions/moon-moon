@@ -60,7 +60,7 @@ Die geschnittenen Platten sollten ungefähr so aussehen:
 #### 1. Verkablen der drei Drucksensoren
 In diesem Schritt werden die Drucksensoren verkabelt und über eine Platine verbunden, so dass sie später einfacher mit dem Arduino verbunden werden können.
 
->Benötigte Materialien für diesen Schritt:
+**Benötigte Materialien für diesen Schritt:**
   * Kabel
   * Die drei Drucksensoren
   * Streifenrasterplatine
@@ -86,7 +86,7 @@ An alle anderen Pins werden die Grounds von den drei Drucksensoren befestigt (di
 
 In diesem Schritt werden die Sensoren an die Bodenplatte geklebt und die Stelzenhalterplatte befestigt.
 
->Benötigte Materialien für diesen Schritt:
+**Benötigte Materialien für diesen Schritt:**
   * Stelzenhalterplatte
   * Bodenplatte
   * Die drei Drucksensoren
@@ -114,7 +114,7 @@ Am Schluss kann man noch die Kabel mit Klebeband fixieren.
 
 In diesem Schritt wird die Platte die den LED-Ring hält erstellt, welche dann an der zuvor erstellten Bodenplatte befestigt wird.
 
->Benötigte Materialien für diesen Schritt:
+**Benötigte Materialien für diesen Schritt:**
   * LedRingHalterung
   * Kabelplatte
   * Holzleim
@@ -125,7 +125,7 @@ In diesem Schritt wird die Platte die den LED-Ring hält erstellt, welche dann a
 
 Kleben Sie die Kabelplatte mit Holzleim auf die LedRingHalterung, so dass sich alle sechs Löcher exakt überlappen. Nachdem der Leim getrocknet ist können Sie den LED-Ring wie im Bild, mit dem doppelseitigen Klebeband, auf den übergeblieben Rand kleben. Achten Sie darauf, dass die Kabel des LED-Rings durch eine der drei hierfür vorgesehenen Kabellöcher laufen. Als letztes kleben Sie, mit Holzleim, die erstellte LED-Ring Platte auf die zuvor erstellte Bodenplatte wie im Bild unten zu sehen ist.
 
-ACHTUNG: Achten Sie darauf das die Löcher durch die später die Stelzen der Druckplatte laufen (nicht die Kabellöcher) exakt über den Drucksensoren liegen. Tipp: Benutzen Sie den Rundstab als fixierung.
+**ACHTUNG:** Achten Sie darauf das die Löcher durch die später die Stelzen der Druckplatte laufen (nicht die Kabellöcher) exakt über den Drucksensoren liegen. **Tipp:** Benutzen Sie den Rundstab als fixierung.
 
 <p align="center">
 <img src="/images/mittelstueck.jpg" alt="mittelstueck.jpg">
@@ -135,7 +135,7 @@ ACHTUNG: Achten Sie darauf das die Löcher durch die später die Stelzen der Dru
 
 In diesem Schritt wird die Druckplatte erstellt auf die später das Handy gelegt werden soll.
 
->Benötigte Materialien für diesen Schritt:
+**Benötigte Materialien für diesen Schritt:**
   * DruckplatteOben
   * DruckplatteUnten
   * Rundstab 12 x 12 mm 0,5m (Buche)
