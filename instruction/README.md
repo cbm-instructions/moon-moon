@@ -14,6 +14,7 @@
 * Klebeband
 * Rundstab 12 x 12 mm 0,5m (Buche)
 * Schmirgelpapier
+* Doppelseitiges Klebeband
 
 ### Werkzeuge
 * Laser Cutter
@@ -111,6 +112,24 @@ Am Schluss kann man noch die Kabel mit Klebeband fixieren.
 
 #### 3. Fertigung der LED-Ring Platte
 
+In diesem Schritt wird die Platte die den LED-Ring hält erstellt, welche dann an der zuvor erstellten Bodenplatte befestigt wird.
+
+Benötigte Materialien für diesen Schritt:
+  * LedRingHalterung
+  * Kabelplatte
+  * Holzleim
+  * Neopixel LED Ring
+  * Doppelseitiges Klebeband
+  * Die zuvor erstelle Bodenplatte
+  * Holzstab
+
+Kleben Sie die Kabelplatte mit Holzleim auf die LedRingHalterung, so dass sich alle sechs Löcher exakt überlappen. Nachdem der Leim getrocknet ist können Sie den LED-Ring wie im Bild, mit dem doppelseitigen Klebeband, auf den übergeblieben Rand kleben. Achten Sie darauf, dass die Kabel des LED-Rings durch eine der drei hierfür vorgesehenen Kabellöcher laufen. Als letztes kleben Sie, mit Holzleim, die erstellte LED-Ring Platte auf die zuvor erstellte Bodenplatte wie im Bild unten zu sehen ist.
+
+ACHTUNG: Achten Sie darauf das die Löcher durch die später die Stelzen der Druckplatte laufen (nicht die Kabellöcher) exakt über den Drucksensoren liegen. Tipp: Benutzen Sie den Rundstab als fixierung.
+
+<p align="center">
+<img src="/images/mittelstueck.jpg" alt="mittelstueck.jpg">
+</p>
 
 #### 4. Fertigung der Druckplatte
 
