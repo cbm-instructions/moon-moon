@@ -197,7 +197,7 @@ Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim 
 <img src="/images/druckplatte.jpg" alt="druckplatte.jpg"/>
 </p>
 
-**Tipp:** Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. Der Sensor kommt so in seinen optimalen Arbeitsbereich. Der Schwellwert im Programm muss dazu angepasst werden [phoneIsThereThreshold in ForceSensors.cpp](../code/ForceSensors.cpp).
+**Tipp:** Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. Der Sensor kommt so in seinen optimalen Arbeitsbereich. Der Schwellwert im Programm muss dazu angepasst werden [phoneIsThereThreshold in ForceSensors.cpp](code/ForceSensors.cpp).
 
 #### 5. Arduino Steckplatte
 
@@ -219,7 +219,7 @@ Als erstes schneiden Sie eine Stück aus der Streifenrasterplatine aus, welches 
 
 Löten Sie jeweils das Power-Kabel des LED-Rings und der Sensorsteckplatte an den 5V Streifen der Steckplatte. Genauso werden jeweils der Ground des LED-Rings und der Sensorsteckplatte an den Ground-Streifen der Steckplatte gelötet.
 Zuletzt löten Sie die drei Inputkabel der Sensoren an die Analog Eingänge A0 - A2.
-Bedenken Sie dabei die Ausrichtung aus Kapitel [3. Fertigung der LED-Ring Platte](# 3. Fertigung der LED-Ring Platte).
+Bedenken Sie dabei die Ausrichtung aus Kapitel [Fertigung der LED-Ring Platte](#3-fertigung-der-led-ring-platte).
 An A1 wird der Sensor angeschlossen, der im Uhrzeigersinn von LED 0 liegt. An A2 wird der Sensor angeschlossen, der gegen den Uhrzeigersinn von LED 0 liegt.
 
 TODO Schaltplan !!!!!!
