@@ -22,7 +22,7 @@ void setup() {
 
   forceSensors = new ForceSensors(FS_A_PIN, FS_B_PIN, FS_C_PIN);
   forceSensors->setup();
-  
+
   ring = new NeoPatterns(60, NEOPIXEL_PIN, NEO_RGBW + NEO_KHZ800);
   ring->begin();
   ring->RainbowCycle(3, FORWARD);
@@ -33,7 +33,71 @@ void setup() {
 
   fsm = new FiniteStateMachine(new StandbyState(), ring, forceSensors, clock, memory);
   fsm->setup();
-  
+
+    //DEMO DATA
+    saveDay(0);
+    saveDay(0);
+    saveDay(0);
+    saveDay(0);
+    saveDay(1);
+    saveDay(0);
+    saveDay(0);
+    saveDay(0);
+    saveDay(0);
+    saveDay(1);
+    saveDay(0);
+    saveDay(0);
+    saveDay(1);
+    saveDay(0);
+    saveDay(1);
+    saveDay(0);
+    saveDay(1);
+    saveDay(1);
+    saveDay(0);
+    saveDay(1);
+    saveDay(1);
+    saveDay(1);
+    saveDay(0);
+    saveDay(1);
+    saveDay(2);
+    saveDay(1);
+    saveDay(1);
+    saveDay(2);
+    saveDay(2);
+    saveDay(2);
+    saveDay(0);
+    saveDay(3);
+    saveDay(2);
+    saveDay(2);
+    saveDay(2);
+    saveDay(3);
+    saveDay(3);
+    saveDay(3);
+    saveDay(2);
+    saveDay(3);
+    saveDay(3);
+    saveDay(3);
+
+}
+
+void saveDay(int level) {
+    memory->setSleptEnough(true);
+    memory->setCurrentOnTime(true);
+    memory->setCurrentMood(true);
+
+    if(level == 0) {
+        memory->setSleptEnough(false);
+        memory->setCurrentOnTime(false);
+        memory->setCurrentMood(false);
+    } else if(level == 1){
+        memory->setSleptEnough(false);
+        memory->setCurrentOnTime(false);
+    } else if (level == 2){
+        memory->setSleptEnough(false);
+    }
+
+    memory->persistCurrentDayInfo();
+
 }
 
 void loop() {
@@ -49,6 +113,3 @@ int freeRam ()
   int v;
   return (int) &v - (__brkval == 0 ? (int) &__heap_start : (int) __brkval);
 }
-
-
-

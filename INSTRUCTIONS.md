@@ -266,7 +266,10 @@ Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken 
 
 Halexa kann nun in Betrieb genommen werden.
 
-## Anpassung der Software
+## Anpassung der Software und Entfernen der Demo-Daten
+
+Die [arduino.ino](code/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
+in der setup Methode gibt es eine Reihe von handgeschriebenen Demo Daten, die entfernt werden sollten.
 
 Aktuell gibt es noch keine Einstellungsmöglichkeiten. Die Software muss direkt bearbeitet werden und auf den Arduino gespielt werden.
 
@@ -274,8 +277,6 @@ Parameter zur Druckplatte befinden sich in der [ForceSensors.cpp](code/ForceSens
 
 Parameter zur Zeit befinden sich in der [Clock.cpp](code/Clock.cpp). Hier kann die Schlafenszeit definiert werden. Durch Anpassen der Logik in isSleepTime() kann (nach der Anbindung einer besseren Uhr) eine korrekte Schlafenszeit nach Stunde (hoursOfDay) und Minuten (minutesOfHour) erkannt werden.
 Es kann auch eine optimale Schlafdauer festgelegt werden.
-
-Die [arduino.ino](code/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
 
 Die [NeoPatterns.cpp](code/NeoPatterns.cpp) erlaubt zusammen mit allen State-Klassen die Anpassung der Animationen und Farben.
 
