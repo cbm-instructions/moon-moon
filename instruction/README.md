@@ -1,3 +1,8 @@
+
+# Bauanleitung
+
+In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](https://github.com/cbm-instructions/moon-moon/tree/master/code/).
+
 ## Materialien und Werkzeuge
 
 ### Materialien
@@ -17,6 +22,8 @@
 * Schmirgelpapier
 * Doppelseitiges Klebeband
 * Plexiglassscheibe 170x170 mm
+* Lötzinn
+* Gummiband oder Schnur
 
 ### Werkzeuge
 * Laser Cutter
@@ -51,6 +58,8 @@ Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplat
 * DruckplatteOben.svg
 
 * Den größeren der beiden Mäntel in Matel.svg
+
+**Tipp:** Beim schneiden des Mantels ist es wichtig die Stärke des Lasers zu erhöhen, da dieser sonst nicht komplett durchschneidet und der Mantel sonst leicht bricht.
 
 Die geschnittenen Platten sollten ungefähr so aussehen:
 
@@ -188,10 +197,32 @@ In diesem Schritt werden alle vorher erstellen Komponenten zusammengesetzt.
 **Benötigte Materialien für diesen Schritt:**
   * Erstellte Bodenplatte
   * Erstellte Druckplatte
+  * LED-Ring Platte
   * Holzmantel
   * Arduino und Steckplatte
   * Plexiglassscheibe
+  * Doppelseitiges Klebeband
+  * Dremel
+  * Gummiband oder Schnur
+
+Als erstes verkabeln Sie den LED-Ring und die Drucksensoren mit dem Arduino und befestigen diesen mit doppelseitigen Klebeband an der Bodenplatte.
 
 <p align="center">
-<img src="/images/zusammengesetzt.jpg" alt="zusammengesetzt.jpg"/>
+<img src="/images/verkabelung.jpg" alt="verkabelung.jpg"/>
 </p>
+
+Dann können Sie die Druckplatte in die dafür vorgesehenen Löcher stecken. Zwischen die Druckplatte und die LED-Ring Platte kommt die Plexiglassscheibe.
+
+<p align="center">
+<img src="/images/zusammen.jpg" alt="zusammen.jpg"/>
+</p>
+
+Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken haben wir den Mantel nur mit einem Gummiband befestigt. Hierzu können Sie mit einem Dremel vier Löcher in den Mantel machen und dann mit einer Schnur oder einem Gummiband diesen befestigen. Die bleibende Öffnung ist für das Stromkabel des Arduinos. 
+
+<p align="center">
+<img src="/images/mantelbefestigung.jpg" alt="mantelbefestigung.jpg"/>
+</p>
+
+#### Allgemeine Tipps
+
+* Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. (Schwellwert im Programm muss dazu angepasst werden)
