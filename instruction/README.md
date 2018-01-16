@@ -4,7 +4,7 @@
 * Arduino Uno
 * 3x Force Resistance Sensor
 * 1 Neopixel LED Ring (4/4)
-* Sperrholzplatte 4x460x61
+* Sperrholzplatte 4x460x61 mm
 * Kabel
 * Streifenrasterplatine
 * 5 Pin Stiftleiste
@@ -13,9 +13,11 @@
 * Holzleim
 * Klebeband
 * Rundstab 12 x 12 mm 0,5m (Buche)
+* Schmirgelpapier
 
 ### Werkzeuge
 * Laser Cutter
+* Dremel
 * Lötkolben
 * Zange
 * Heißklebepistole
@@ -35,7 +37,7 @@
 
 Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](https://github.com/cbm-instructions/moon-moon/tree/master/lasercutter/) heruntergeladen werden.
 
-Es müssen folgende SVG-Dateien geschnitten werden:
+Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplatte 4x460x61 mm benutzt:
 
 * Grundplatte.svg
 * Stelzenhalter.svg
@@ -88,14 +90,18 @@ Benötigte Materialien für diesen Schritt:
   * Bodenplatte
   * Die drei Drucksensoren
   * Holzleim
+  * Rundstab 12 x 12 mm 0,5m (Buche)
   * Klebeband
+  * Heißklebepistole
 
 Schnittreste vom Laser Cutter:
 <p align="center">
 <img src="/images/kleineStuetzeb.jpg" alt="kleineStuetzeb.jpg"/ width ="200px" height ="180">
 </p>
 
-Als erstes sollten Sie die Stelzenhalterplatte mittig auf die Bodenplatte legen und die Stellen markieren an denen die Löcher sind. Auf diese Stellen werden nun die Drucksensoren geklebt (diese haben bereits eine Klebefläche). Danach kann die Stelzenhalterplatte wie vorher auf die Bodenplatte gelegt werden. Wir haben die runden Schnittreste des Laser Cutters als Zwischenstücke benutzt um die Bodenplatte mit der Stelzenhalterplatte zu befästigen, so dass diese nicht die Sensoren berührt. Am Schluss kann man noch die Kabel mit Klebeband fixieren.
+
+Als erstes sollten Sie die Stelzenhalterplatte mittig auf die Bodenplatte legen und die Stellen markieren an denen die Löcher sind. Auf diese Stellen werden nun die Drucksensoren geklebt (diese haben bereits eine Klebefläche). Danach kann die Stelzenhalterplatte wie vorher auf die Bodenplatte gelegt werden. Wir haben die runden Schnittreste des Laser Cutters als Zwischenstücke benutzt um die Bodenplatte mit der Stelzenhalterplatte zu befästigen, so dass diese nicht die Sensoren berührt. Schneiden Sie drei gleichlange Stücke vom Rundstab (je 70 mm) ab . Kleben Sie diese wie auf dem unteren Bild leicht versetzt zu den Drucksensoren auf die Stelzenhalterplatte (Mit Holzleim oder Heißklebepistole).
+Am Schluss kann man noch die Kabel mit Klebeband fixieren.
 
 
 <p align="center">
@@ -108,11 +114,17 @@ Als erstes sollten Sie die Stelzenhalterplatte mittig auf die Bodenplatte legen 
 
 #### 4. Fertigung der Druckplatte
 
+In diesem Schritt wird die Druckplatte erstellt auf die später das Handy gelegt werden soll.
+
 Benötigte Materialien für diesen Schritt:
   * DruckplatteOben
   * DruckplatteUnten
   * Rundstab 12 x 12 mm 0,5m (Buche)
   * Heißklebepistole
+  * Holzleim
+  * Dremel oder Schmirgelpapier
+
+Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim so zusammen das drei der Löcher exakt übereinande liegen. In die drei von der oberen Platte verschlossen Löcher werden nun drei gleich große Holzstäbe (78 mm) festgeklebt (Holzleim oder Heißklebepistole). Die unteren Enden der Holzstäbe können mit Schmirgelpapier oder einem Dremel an den Seiten verkleinert werden so das diese die Drucksensoren besser treffen.
 
 <p align="center">
 <img src="/images/druckplatte.jpg" alt="druckplatte.jpg"/>
