@@ -1,6 +1,6 @@
 #include "ForceSensors.h"
 
-const int phoneIsThereThreshold = 150; //minimal force needed to recognize phone
+const int phoneIsThereThreshold = 200; //minimal force needed to recognize phone
 const int phoneIsThereTimeThreshold = 3000; //minimal time a phone needs to be on the pressure sensor to recognize it as there or gone
 const float weightA = 1;
 const float weightB = 1;
@@ -94,5 +94,3 @@ boolean ForceSensors::isPhoneThere() {
 long ForceSensors::getPhoneIsThereTime() {
     return phoneIsThereTime;
 }
-
-
