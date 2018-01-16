@@ -70,6 +70,8 @@ Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplat
 
 **Tipp:** Beim Schneiden des Mantels ist es wichtig die Stärke des Lasers zu erhöhen, da dieser sonst nicht komplett durchschneidet und der Mantel leicht bricht.
 
+**Tipp:** Die .dxf Datei erlaubt es die technische Zeichnung im Rohformat zu öffnen. Hierzu kann z.B. LibreCad verwendet werden.
+
 Die geschnittenen Platten sollten ungefähr so aussehen:
 
 <p align="center">
