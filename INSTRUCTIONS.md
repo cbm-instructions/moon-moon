@@ -1,14 +1,14 @@
 
 # Bauanleitung
 
-In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](https://github.com/cbm-instructions/moon-moon/tree/master/code/).
+In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](../code/).
 
 ## Materialien und Werkzeuge
 
 ### Materialien
 * Arduino Uno
 * 3x Force Resistance Sensor
-* 1 Neopixel LED Ring (4/4)
+* 4 Neopixel LED 1/4 Ringe mit jeweils 15 Pixeln, insgesamt also 60 Pixel
 * Sperrholzplatte 4x460x61 mm
 * Kabel
 * 1 x Streifenrasterplatine
@@ -21,7 +21,7 @@ In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. De
 * Rundstab 12 x 12 mm 0,5m (Buche)
 * Schmirgelpapier
 * Doppelseitiges Klebeband
-* Plexiglassscheibe 170x170 mm
+* milchige Plexiglassscheibe 170x170 mm
 * Lötzinn
 * Gummiband oder Schnur
 
@@ -37,16 +37,25 @@ In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. De
 
 ### Benötigte Vorkenntnisse
 
-* Grundlegende handwerkliche Kentnisse
+* Grundlegende handwerkliche Kenntnisse
 * Arduino Kentnisse
 * Löten
 * C++ (alles)
 
 ### Zusammenlöten des LED-Rings
 
-### Drucken der Platten
+Die 4 Viertelringe müssen zu einem Ring zusammengelötet werden und es müssen die drei notwendigen Leitungen als Litzen herausgelegt werden.
+Das folgende Bild zeigt einen zusammengelöteten Ring ohne Litzen.
 
-Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](https://github.com/cbm-instructions/moon-moon/tree/master/lasercutter/) heruntergeladen werden.
+<p align="center">
+<img src="/images/Neopixel.jpg" alt="Neopixel.jpg"/>
+</p>
+
+An einen der vier GND, IN und VCC Kontakte müssen jetzt noch Litzen mit einer Länge von circa 10cm angelötet werden.
+
+### Schneiden der Platten
+
+Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](../lasercutter/) heruntergeladen werden. Wichtig dabei, ist die Schnittreste des Cutters nicht wegzuwerfen. Sie werden später benötigt.
 
 Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplatte (4x460x61 mm) benutzt:
 
@@ -56,10 +65,9 @@ Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplat
 * Kabelplatte.svg
 * DruckplatteUnten.svg
 * DruckplatteOben.svg
+* Den größeren der beiden Mäntel in Mantel.svg
 
-* Den größeren der beiden Mäntel in Matel.svg
-
-**Tipp:** Beim schneiden des Mantels ist es wichtig die Stärke des Lasers zu erhöhen, da dieser sonst nicht komplett durchschneidet und der Mantel sonst leicht bricht.
+**Tipp:** Beim Schneiden des Mantels ist es wichtig die Stärke des Lasers zu erhöhen, da dieser sonst nicht komplett durchschneidet und der Mantel leicht bricht.
 
 Die geschnittenen Platten sollten ungefähr so aussehen:
 
@@ -95,8 +103,8 @@ Als erstes sollten Sie die drei Drucksensoren mit Kabeln verlöten.
 <img src="/images/KabelSensor.png" alt="KabelSensor.png"/>
 </p>
 
-Danach bauen Sie eine Steckplatine um alle drei Drucksensoren später mit dem Arduino zu verbinden. Die obere waagerechte Steckleiste ist für die Grounds. An den linkesten Stecker dieser Steckleiste wird der Ground des Arduinos befestigt.
-An alle anderen Pins werden die Grounds von den drei Drucksensoren befestigt (die zwei zusätzlichen Stecker dienen nur als Ersatz). Der Ground ist mit jeweils einem Widerstand mit jeder der anderen Grounds verbunden. Die Input Pins des Arduinos werden mit den Pins auf der exakt gegenüberliegenden Seite der Grounds verbunden. Die linke horizontale Steckerleiste wird benutzt um alle Sensoren mit dem 5V Eingang des Arduinos zu verbinden.
+Danach bauen Sie eine Steckplatine um alle drei Drucksensoren später mit dem Arduino zu verbinden. Die obere waagerechte Steckleiste ist für die Grounds. An den vertikalen Stecker dieser Steckleiste wird der Ground des Arduinos befestigt.
+An alle anderen Pins werden die Grounds von den drei Drucksensoren befestigt (die zwei zusätzlichen Stecker dienen nur als Ersatz). Der Ground ist über jeweils einen Widerstand mit jedem der anderen Grounds verbunden. Die Input Pins des Arduinos werden mit den Pins auf der exakt gegenüberliegenden Seite der Grounds verbunden. Die linke horizontale Steckerleiste wird benutzt um alle Sensoren mit dem 5V Eingang des Arduinos zu verbinden. TODO SCHALTPLAN!!!!!!!!
 
 <p align="center">
 <img src="/images/SensorSteckplatten.png" alt="SensorSteckplatten.png"/>
@@ -115,11 +123,10 @@ In diesem Schritt werden die Sensoren an die Bodenplatte geklebt und die Stelzen
   * Klebeband
   * Heißklebepistole
 
-Schnittreste vom Laser Cutter:
+Zusätzlich muss man die Schnittreste des Laser Cutters benutzen:
 <p align="center">
 <img src="/images/kleineStuetzeb.jpg" alt="kleineStuetzeb.jpg"/ width ="200px" height ="180">
 </p>
-
 
 Als erstes sollten Sie die Stelzenhalterplatte mittig auf die Bodenplatte legen und die Stellen markieren an denen die Löcher sind. Auf diese Stellen werden nun die Drucksensoren geklebt (diese haben bereits eine Klebefläche). Danach kann die Stelzenhalterplatte wie vorher auf die Bodenplatte gelegt werden. Wir haben die runden Schnittreste des Laser Cutters als Zwischenstücke benutzt um die Bodenplatte mit der Stelzenhalterplatte zu befästigen, so dass diese nicht die Sensoren berührt. Schneiden Sie drei gleichlange Stücke vom Rundstab (je 70 mm) ab . Kleben Sie diese wie auf dem unteren Bild leicht versetzt zu den Drucksensoren auf die Stelzenhalterplatte (Mit Holzleim oder Heißklebepistole).
 Am Schluss können Sie noch die Kabel mit Klebeband fixieren und die Kabel mit der bereits erstellten Steckplatine verbinden.
@@ -143,13 +150,34 @@ In diesem Schritt wird die Platte die den LED-Ring hält erstellt, welche dann a
   * Die zuvor erstelle Bodenplatte
   * Holzstab
 
-Kleben Sie die Kabelplatte mit Holzleim auf die LedRingHalterung, so dass sich alle sechs Löcher exakt überlappen. Nachdem der Leim getrocknet ist können Sie den LED-Ring wie im Bild, mit dem doppelseitigen Klebeband, auf den übergeblieben Rand kleben. Achten Sie darauf, dass die Kabel des LED-Rings durch eine der drei hierfür vorgesehenen Kabellöcher laufen. Als letztes kleben Sie, mit Holzleim, die erstellte LED-Ring Platte auf die zuvor erstellte Bodenplatte wie im Bild unten zu sehen ist.
+Kleben Sie die Kabelplatte mit Holzleim auf die LedRingHalterung, so dass sich alle sechs Löcher exakt überlappen. Nachdem der Leim getrocknet ist können Sie den LED-Ring wie im Bild, mit dem doppelseitigen Klebeband, auf den übergeblieben Rand kleben. Achten Sie darauf, dass die Kabel des LED-Rings durch eine der drei hierfür vorgesehenen Kabellöcher laufen.
 
-**ACHTUNG:** Achten Sie darauf das die Löcher durch die später die Stelzen der Druckplatte laufen (nicht die Kabellöcher) exakt über den Drucksensoren liegen. **Tipp:** Benutzen Sie den Rundstab als fixierung.
+Zusätzlich muss der Übergang vom 1. zum 60. Pixel exakt wie auf dem folgenden Bild ausgerichtet werden.
+
+<p align="center">
+<img src="/images/numbered.png" alt="numbered.png">
+</p>
+
+* (3) 0. Pixel des Rings (Der erste Pixel nach dem Anlötpunkt der IN-Leitung)
+* (4) Lötstelle zwischen zwei Viertelringen muss eine exakte Verlängerung der Kabelführungskante (rot) sein
+* (5) 59. Pixel des Rings
+
+Sind (3) bis (5) korrekt ausgerichtet, dann gilt für (1) und (2)
+
+* (1) Diese Stelze + Sensor ist für die Bewertungslogik ein "positiver" Sektor und der Sensor wird an A1 angeschlossen
+* (2) Diese Stelze + Sensor ist für die Bewertungslogik ein "negativer" Sektor und der Sensor wird an A2 angeschlossen
+
+Als letztes kleben Sie, mit Holzleim, die erstellte LED-Ring Platte auf die zuvor erstellte Bodenplatte wie im Bild unten zu sehen ist.
+
+**ACHTUNG:** Achten Sie darauf, dass die Löcher, durch die später die Stelzen der Druckplatte laufen (nicht die Kabellöcher) exakt über den Drucksensoren liegen.
+
+**Tipp:** Benutzen Sie den Rundstab als Fixierung.
 
 <p align="center">
 <img src="/images/mittelstueck.jpg" alt="mittelstueck.jpg">
 </p>
+
+
 
 #### 4. Fertigung der Druckplatte
 
@@ -163,15 +191,17 @@ In diesem Schritt wird die Druckplatte erstellt auf die später das Handy gelegt
   * Holzleim
   * Dremel oder Schmirgelpapier
 
-Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim so zusammen das drei der Löcher exakt übereinande liegen. In die drei von der oberen Platte verschlossen Löcher werden nun drei gleich große Holzstäbe (78 mm) festgeklebt (Holzleim oder Heißklebepistole). Die unteren Enden der Holzstäbe können mit Schmirgelpapier oder einem Dremel an den Seiten verkleinert werden so das diese die Drucksensoren besser treffen.
+Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim so zusammen das drei der Löcher exakt übereinande liegen. In die drei von der oberen Platte verschlossen Löcher werden nun drei gleich große Holzstäbe (78 mm) festgeklebt (Holzleim oder Heißklebepistole). Die unteren Enden der Holzstäbe können mit Schmirgelpapier oder einem Dremel an den Seiten verkleinert werden, so dass diese die Drucksensoren besser treffen.
 
 <p align="center">
 <img src="/images/druckplatte.jpg" alt="druckplatte.jpg"/>
 </p>
 
+**Tipp:** Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. Der Sensor kommt so in seinen optimalen Arbeitsbereich. Der Schwellwert im Programm muss dazu angepasst werden [phoneIsThereThreshold in ForceSensors.cpp](../code/ForceSensors.cpp).
+
 #### 5. Arduino Steckplatte
 
-In diesem Schritt wird eine Steckplatte erstellt die mit den Drucksensoren und dem Led-Ring verbunden ist. Diese Steckplatte kann dann später einfach auf den Arduino gesteckt werden und vereinfacht die Verkabelung.
+In diesem Schritt wird eine Steckplatte erstellt die mit den Drucksensoren und dem Led-Ring verbunden ist. Diese Steckplatte kann dann, wie ein Arduino Shield, später einfach auf den Arduino gesteckt werden und vereinfacht die Verkabelung.
 
 **Benötigte Materialien für diesen Schritt:**
   * Streifenrasterplatine
@@ -181,14 +211,18 @@ In diesem Schritt wird eine Steckplatte erstellt die mit den Drucksensoren und d
   * Arduino
   * Teppichmesser
 
-Als erstes schneiden Sie eine Stück aus der Streifenrasterplatine aus welches der größe des Arduinos entspricht. Nehmen Sie den Arduino und Stecken Sie die 8 Pin Stiftleiste in Power die 6 Pin Stiftleiste in den Analog In und die letzte 8 Pin Stiftleiste in die Digital Eingänge 0-7. Nun können sie einfach die Streifenrasterplatine auf die Stifleisten legen und diese festlöten. Achten Sie darauf das die Streifen von der einen Seite zu anderen des Arduinos verlaufen. Nachdem die Stiftleisten an der Streifenrasterplatine festgelötet sind können sie die Platine abnehmen. Mit einem Teppichmesser können Sie nun wie im Bild in der mitte der Platine das Kupfer abkratzen.
+Als erstes schneiden Sie eine Stück aus der Streifenrasterplatine aus, welches der Größe des Arduinos entspricht. Nehmen Sie den Arduino und Stecken Sie die 8 Pin Stiftleiste in Power die 6 Pin Stiftleiste in die Analogeingänge und die letzte 8 Pin Stiftleiste in die Digitaleingänge 0-7. Nun können Sie einfach die Streifenrasterplatine auf die Stiftleisten legen und diese festlöten. Achten Sie darauf, dass die Streifen von der einen Pinseite zu der anderen Pinseite des Arduinos verlaufen. Nachdem die Stiftleisten an der Streifenrasterplatine festgelötet sind, können sie die Platine abnehmen. Mit einem Teppichmesser können Sie nun wie im Bild in der mitte der Platine das Kupfer abkratzen um den Kontakt zu unterbrechen.
 
 <p align="center">
 <img src="/images/arduinoSteckplatte.png" alt="arduinoSteckplatte.png"/>
 </p>
 
-Nun zur verkabelung. Löten Sie jeweils das Power Kabel des LED-Rings und der Sensorstckplatte an den 5 V Streifen der Steckplatte. Genauso werden jeweils der Ground des LED-Rings und der Sensorsteckplatte an den Ground Streife der Steckplatte gelötet.
-Zuletzt Löten sie die drei Inputkabel der Sensoren an die Analog Eingänge A0 - A2
+Löten Sie jeweils das Power-Kabel des LED-Rings und der Sensorsteckplatte an den 5V Streifen der Steckplatte. Genauso werden jeweils der Ground des LED-Rings und der Sensorsteckplatte an den Ground-Streifen der Steckplatte gelötet.
+Zuletzt löten Sie die drei Inputkabel der Sensoren an die Analog Eingänge A0 - A2.
+Bedenken Sie dabei die Ausrichtung aus Kapitel [3. Fertigung der LED-Ring Platte](# 3. Fertigung der LED-Ring Platte).
+An A1 wird der Sensor angeschlossen, der im Uhrzeigersinn von LED 0 liegt. An A2 wird der Sensor angeschlossen, der gegen den Uhrzeigersinn von LED 0 liegt.
+
+TODO Schaltplan !!!!!!
 
 #### 6. Zusammensetzen
 
@@ -213,16 +247,18 @@ Als erstes verkabeln Sie den LED-Ring und die Drucksensoren mit dem Arduino und 
 
 Dann können Sie die Druckplatte in die dafür vorgesehenen Löcher stecken. Zwischen die Druckplatte und die LED-Ring Platte kommt die Plexiglassscheibe.
 
+**Tipp:** Durch Klebeungenauigkeiten kann es sein, dass die Stelzen an einer der Führungsöffnungen reiben, oder die Stelzen nicht exakt die Sensoren berühren. In diesem Fall eignet es sich die Stelzen an den kritischen Stellen leicht mit dem Dremel anzupassen. So wird der reibungslose Ablauf ermöglicht.
+
 <p align="center">
 <img src="/images/zusammen.jpg" alt="zusammen.jpg"/>
 </p>
 
-Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken haben wir den Mantel nur mit einem Gummiband befestigt. Hierzu können Sie mit einem Dremel vier Löcher in den Mantel machen und dann mit einer Schnur oder einem Gummiband diesen befestigen. Die bleibende Öffnung ist für das Stromkabel des Arduinos.
+Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken haben wir den Mantel nur mit einem Gummiband befestigt. Hierzu können Sie mit einem Dremel vier Löcher in den Mantel bohren und dann mit einer Schnur oder einem Gummiband befestigen. Die bleibende Öffnung ist für das Stromkabel des Arduinos.
 
 <p align="center">
 <img src="/images/mantelbefestigung.jpg" alt="mantelbefestigung.jpg"/>
 </p>
 
-#### Allgemeine Tipps
+**Tipp:** Für eine saubere und permanente Ummantelung muss der Mantel ca 1cm länger gedruckt werden. Zusätzlich müssen Kabelöffnungen gebohrt werden und ein permanenter Befestigungsmechanismus gefunden werden.
 
-* Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. (Schwellwert im Programm muss dazu angepasst werden)
+Halexa kann nun in Betrieb genommen werden.
