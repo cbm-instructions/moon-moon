@@ -217,7 +217,7 @@ Dann können Sie die Druckplatte in die dafür vorgesehenen Löcher stecken. Zwi
 <img src="/images/zusammen.jpg" alt="zusammen.jpg"/>
 </p>
 
-Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken haben wir den Mantel nur mit einem Gummiband befestigt. Hierzu können Sie mit einem Dremel vier Löcher in den Mantel machen und dann mit einer Schnur oder einem Gummiband diesen befestigen. Die bleibende Öffnung ist für das Stromkabel des Arduinos. 
+Als letztes wird der Holzmantel um die Konstruktion gelegt. Aus Wartungszwecken haben wir den Mantel nur mit einem Gummiband befestigt. Hierzu können Sie mit einem Dremel vier Löcher in den Mantel machen und dann mit einer Schnur oder einem Gummiband diesen befestigen. Die bleibende Öffnung ist für das Stromkabel des Arduinos.
 
 <p align="center">
 <img src="/images/mantelbefestigung.jpg" alt="mantelbefestigung.jpg"/>
