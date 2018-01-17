@@ -35,6 +35,15 @@ void setup() {
   fsm->setup();
 
     //DEMO DATA
+  saveDay(0);
+  saveDay(0);
+  saveDay(0);
+  saveDay(0);
+  saveDay(1);
+  saveDay(0);
+  saveDay(3);
+  saveDay(0);
+  saveDay(0);
     saveDay(0);
     saveDay(0);
     saveDay(0);
@@ -42,18 +51,18 @@ void setup() {
     saveDay(1);
     saveDay(0);
     saveDay(0);
+    saveDay(3);
+    saveDay(0);
+    saveDay(1);
     saveDay(0);
     saveDay(0);
     saveDay(1);
     saveDay(0);
-    saveDay(0);
-    saveDay(1);
-    saveDay(0);
     saveDay(1);
     saveDay(0);
     saveDay(1);
     saveDay(1);
-    saveDay(0);
+    saveDay(3);
     saveDay(1);
     saveDay(1);
     saveDay(1);
@@ -77,6 +86,15 @@ void setup() {
     saveDay(3);
     saveDay(3);
     saveDay(3);
+  saveDay(3);
+  saveDay(2);
+  saveDay(3);
+  saveDay(3);
+  saveDay(3);
+  saveDay(3);
+  saveDay(3);
+  saveDay(3);
+  saveDay(2);
 
 }
 

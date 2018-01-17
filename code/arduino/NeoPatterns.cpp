@@ -1,6 +1,7 @@
 #include "NeoPatterns.h"
 #include "State.h"
 #include "Memory.h"
+#include <math.h>
 
 
 // Update the pattern
@@ -253,11 +254,15 @@ void NeoPatterns::Rate() {
 
 }
 
+#define E 2.718281828459045235360287471352
+
 void NeoPatterns::History(DayInfo *dayInfo) {
     ActivePattern = NONE;
 
+    setBrightness(100);
+
     for (size_t i = 0; i < 60; i++) {
-        setPixelColor(i, Color(25, 25, 25));
+        setPixelColor(i, Color(0, 0, 0));
     }
 
     setPixelColor(0, Color(0, 0, 255));
@@ -268,18 +273,23 @@ void NeoPatterns::History(DayInfo *dayInfo) {
         if (!dayInfo[i].empty && ledPos < 60) {
 
             int dayValue = dayInfo[i].mood + dayInfo[i].onTime + dayInfo[i].sleptEnough;
+
+            float factor = max((pow(E,(-1*ledPos/11))), 0);
             switch (dayValue) {
-                case 0: setPixelColor(ledPos, Color( 0, 255, 0));
+                case 0:
+                    setPixelColor(ledPos, Color(0, 255 * factor * 1.2, 0));
                     break;
-                case 1: setPixelColor(ledPos, Color( 70, 255, 0));
+                case 1:
+                    setPixelColor(ledPos, Color(70 * factor, 255 * factor * 1.2, 0));
                     break;
-                case 2: setPixelColor(ledPos, Color( 150, 255, 0));
+                case 2:
+                    setPixelColor(ledPos, Color(150 * factor, 255 * factor * 1.2, 0));
                     break;
-                case 3: setPixelColor(ledPos, Color( 255, 0, 0));
+                case 3:
+                    setPixelColor(ledPos, Color(255 * factor, 0, 0));
                     break;
             };
 
-            Serial.println(dayValue);
             ledPos++;
 
         }
