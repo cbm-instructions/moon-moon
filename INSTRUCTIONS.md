@@ -49,7 +49,7 @@ Die 4 Viertelringe müssen zu einem Ring zusammengelötet werden und es müssen 
 Das folgende Bild zeigt einen zusammengelöteten Ring ohne Litzen.
 
 <p align="center">
-<img src="/images/Neopixel.jpg" alt="Neopixel.jpg"/>
+<img src="/images/neopixel.jpg" alt="Neopixel.jpg"/>
 </p>
 
 An einen der vier GND, IN und VCC Kontakte müssen jetzt noch Litzen mit einer Länge von circa 10cm angelötet werden.
