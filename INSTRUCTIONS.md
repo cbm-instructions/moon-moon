@@ -1,7 +1,7 @@
 
 # Bauanleitung
 
-In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](../code/).
+In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](code/).
 
 ## Materialien und Werkzeuge
 
