@@ -268,10 +268,10 @@ Halexa kann nun in Betrieb genommen werden.
 
 ## Anpassung der Software und Entfernen der Demo-Daten
 
+Aktuell gibt es noch keine Einstellungsmöglichkeiten. Die Software muss direkt bearbeitet werden und auf den Arduino gespielt werden.
+
 Die [arduino.ino](code/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
 in der setup Methode gibt es eine Reihe von handgeschriebenen Demo Daten, die entfernt werden sollten.
-
-Aktuell gibt es noch keine Einstellungsmöglichkeiten. Die Software muss direkt bearbeitet werden und auf den Arduino gespielt werden.
 
 Parameter zur Druckplatte befinden sich in der [ForceSensors.cpp](code/ForceSensors.cpp). Hier können Schwellwerte für Handys und Berührungen gesetzt werden. Auch können die Sensoren gewichtet werden, damit sie gleichstarke Werte liefern.
 
