@@ -21,7 +21,7 @@ bool Clock::isSleepTime() {
 
     if(this->getMinuteOfHour() == 0) {
         return false;
-    } else if (this->getMinuteOfHour() % 2 == 0) {
+    } else if (this->getMinuteOfHour() % 2 == 0 && this->getSecondOfMinute() <= 1) {
         return true;
     } else return false;
 
