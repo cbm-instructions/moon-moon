@@ -1,7 +1,7 @@
 
 # Bauanleitung
 
-In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](code/).
+In diesem Abschnitt befindet sich die komplette Anleitung zum Bau von Halexa. Der Code für den Arduino befindet sich [hier](code/arduino/).
 
 ## Materialien und Werkzeuge
 
@@ -202,7 +202,7 @@ Als erstes kleben Sie die DruckplatteOben und die DruckplatteUnten mit Holzleim 
 <img src="/images/druckplatte.jpg" alt="druckplatte.jpg"/>
 </p>
 
-**Tipp:** Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. Der Sensor kommt so in seinen optimalen Arbeitsbereich. Der Schwellwert im Programm muss dazu angepasst werden [phoneIsThereThreshold in ForceSensors.cpp](code/ForceSensors.cpp).
+**Tipp:** Die Druckplatte kann optional auf der Rückseite mit Gewichten versehen um so ein erhöhtes Grundgewicht zu erhalten. Dadurch arbeiten die Sensoren wesentlich besser da sie vor allem bei wenig Druck dazu neigen ungenau zu sein. Der Sensor kommt so in seinen optimalen Arbeitsbereich. Der Schwellwert im Programm muss dazu angepasst werden [phoneIsThereThreshold in ForceSensors.cpp](code/arduino/ForceSensors.cpp).
 
 #### 5. Arduino Steckplatte
 
@@ -272,17 +272,17 @@ Halexa kann nun in Betrieb genommen werden.
 
 Aktuell gibt es noch keine Einstellungsmöglichkeiten. Die Software muss direkt bearbeitet werden und auf den Arduino gespielt werden.
 
-Die [arduino.ino](code/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
+Die [arduino.ino](code/arduino/arduino.ino) erlaubt das Bestimmen des Startzustands und der PIN Nummern.
 in der setup Methode gibt es eine Reihe von handgeschriebenen Demo Daten, die entfernt werden sollten.
 
-Parameter zur Druckplatte befinden sich in der [ForceSensors.cpp](code/ForceSensors.cpp). Hier können Schwellwerte für Handys und Berührungen gesetzt werden. Auch können die Sensoren gewichtet werden, damit sie gleichstarke Werte liefern.
+Parameter zur Druckplatte befinden sich in der [ForceSensors.cpp](code/arduino/ForceSensors.cpp). Hier können Schwellwerte für Handys und Berührungen gesetzt werden. Auch können die Sensoren gewichtet werden, damit sie gleichstarke Werte liefern.
 
-Parameter zur Zeit befinden sich in der [Clock.cpp](code/Clock.cpp). Hier kann die Schlafenszeit definiert werden. Durch Anpassen der Logik in isSleepTime() kann (nach der Anbindung einer besseren Uhr) eine korrekte Schlafenszeit nach Stunde (hoursOfDay) und Minuten (minutesOfHour) erkannt werden.
+Parameter zur Zeit befinden sich in der [Clock.cpp](code/arduino/Clock.cpp). Hier kann die Schlafenszeit definiert werden. Durch Anpassen der Logik in isSleepTime() kann (nach der Anbindung einer besseren Uhr) eine korrekte Schlafenszeit nach Stunde (hoursOfDay) und Minuten (minutesOfHour) erkannt werden.
 Es kann auch eine optimale Schlafdauer festgelegt werden.
 
-Die [NeoPatterns.cpp](code/NeoPatterns.cpp) erlaubt zusammen mit allen State-Klassen die Anpassung der Animationen und Farben.
+Die [NeoPatterns.cpp](code/arduino/NeoPatterns.cpp) erlaubt zusammen mit allen State-Klassen die Anpassung der Animationen und Farben.
 
-Die [Memory.cpp](code/Memory.cpp) kann genutzt werden um einen echten persistenten Speicher anzubinden.
+Die [Memory.cpp](code/arduino/Memory.cpp) kann genutzt werden um einen echten persistenten Speicher anzubinden.
 
 ## Logischer Schaltplan und Aufbau
 
