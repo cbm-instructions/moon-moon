@@ -107,7 +107,9 @@ Als erstes sollten Sie die drei Drucksensoren mit Kabeln verlöten.
 </p>
 
 Danach bauen Sie eine Steckplatine um alle drei Drucksensoren später mit dem Arduino zu verbinden. Die obere waagerechte Steckleiste ist für die Grounds. An den vertikalen Stecker dieser Steckleiste wird der Ground des Arduinos befestigt.
-An alle anderen Pins werden die Grounds von den drei Drucksensoren befestigt (die zwei zusätzlichen Stecker dienen nur als Ersatz). Der Ground ist über jeweils einen Widerstand mit jedem der anderen Grounds verbunden. Die Input Pins des Arduinos werden mit den Pins auf der exakt gegenüberliegenden Seite der Grounds verbunden. Die linke horizontale Steckerleiste wird benutzt um alle Sensoren mit dem 5V Eingang des Arduinos zu verbinden. TODO SCHALTPLAN!!!!!!!!
+An alle anderen Pins werden die Grounds von den drei Drucksensoren befestigt (die zwei zusätzlichen Stecker dienen nur als Ersatz). Der Ground ist über jeweils einen Widerstand mit jedem der anderen Grounds verbunden. Die Input Pins des Arduinos werden mit den Pins auf der exakt gegenüberliegenden Seite der Grounds verbunden. Die linke horizontale Steckerleiste wird benutzt um alle Sensoren mit dem 5V Eingang des Arduinos zu verbinden.
+
+Ein logischer Schaltplan und Aufbau befindet sich [hier](#logischer-schaltplan-und-aufbau).
 
 <p align="center">
 <img src="/images/SensorSteckplatten.png" alt="SensorSteckplatten.png"/>
@@ -225,7 +227,7 @@ Zuletzt löten Sie die drei Inputkabel der Sensoren an die Analog Eingänge A0 -
 Bedenken Sie dabei die Ausrichtung aus Kapitel [Fertigung der LED-Ring Platte](#3-fertigung-der-led-ring-platte).
 An A1 wird der Sensor angeschlossen, der im Uhrzeigersinn von LED 0 liegt. An A2 wird der Sensor angeschlossen, der gegen den Uhrzeigersinn von LED 0 liegt.
 
-TODO Schaltplan !!!!!!
+Ein logischer Schaltplan und Aufbau befindet sich [hier](#logischer-schaltplan-und-aufbau).
 
 #### 6. Zusammensetzen
 
@@ -281,3 +283,15 @@ Es kann auch eine optimale Schlafdauer festgelegt werden.
 Die [NeoPatterns.cpp](code/NeoPatterns.cpp) erlaubt zusammen mit allen State-Klassen die Anpassung der Animationen und Farben.
 
 Die [Memory.cpp](code/Memory.cpp) kann genutzt werden um einen echten persistenten Speicher anzubinden.
+
+## Logischer Schaltplan und Aufbau
+
+Zur Darstellung wurde ein LED Stripe genommen. Dieser hat die gleichen Anschlüsse wie der zu verwendende Ring
+
+<p align="center">
+<img src="/fritzing/cbm_Schaltplan.png" alt="cbm_Schaltplan.png"/>
+</p>
+
+<p align="center">
+<img src="/fritzing/cbm_Steckplatine.png" alt="cbm_SteckPlatine.png"/>
+</p>
