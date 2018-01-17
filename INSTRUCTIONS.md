@@ -56,7 +56,7 @@ An einen der vier GND, IN und VCC Kontakte müssen jetzt noch Litzen mit einer L
 
 ### Schneiden der Platten
 
-Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](../lasercutter/) heruntergeladen werden. Wichtig dabei, ist die Schnittreste des Cutters nicht wegzuwerfen. Sie werden später benötigt.
+Als erstes werden die SVG-Dateien für den Laser Cutter benötigt. Diese können [hier](lasercutter/) heruntergeladen werden. Wichtig dabei, ist die Schnittreste des Cutters nicht wegzuwerfen. Sie werden später benötigt.
 
 Es müssen folgende SVG-Dateien geschnitten werden hierzu wird die Sperrholzplatte (4x460x61 mm) benutzt:
 
