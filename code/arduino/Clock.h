@@ -6,7 +6,6 @@
 class Clock {
 
     private:
-      long sleepTime;
       long wakeTime;
       long hoursInDay;
       long minutesInHour;
@@ -19,8 +18,6 @@ class Clock {
         void setMinutesInHour(long time);
         void setSecondsInMinute(long time);
         void setMillisInSecond(long time);
-        void setSleepTime(long time);
-        long getSleepTime();
         long getTimeRunning();
         long getSecondsRunning();
         long getMinutesRunning();

@@ -11,15 +11,19 @@ Clock::Clock() {
     this->minutesInHour = 60;
     this->secondsInMinute = 60;
     this->millisInSecond = 1000;
-    this->sleepTime = 10; //TODO problems ...
 }
 
 bool Clock::isSleepTime() {
     /*
-     * TODO Usually we would check for same hour of day and same minute of hour. For demo purposes we only check for seconds of minute
-     * a sleep time of 10s would alarm at 0h0m10s, 0h1m10s, 0h2m10s, ...
+     * TODO This is demo code it alarms us every 2 minutes
+
      */
-    return this->getSecondOfMinute() == 10;
+
+    if(this->getMinuteOfHour() == 0) {
+        return false;
+    } else if (this->getMinuteOfHour() % 2 == 0) {
+        return true;
+    } else return false;
 
 }
 
@@ -43,14 +47,6 @@ void Clock::setSecondsInMinute(long time) {
 
 void Clock::setMillisInSecond(long time) {
   this->millisInSecond = time;
-}
-
-void Clock::setSleepTime(long time) {
-  this->sleepTime = time;
-}
-
-long Clock::getSleepTime(){
-  return 10; //TODO demo purpose
 }
 
 long Clock::getTimeRunning() {
